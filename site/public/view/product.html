@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="../css/cliente.css">
+    <link rel="icon" href="../assets/intrabankPng.png">
+    <script src="productView.js"></script>
+
+</head>
+
+<body onload="listProduct()">
+    <a href="../index.html"> <img src="../assets/logo (2).png" alt="" class="logo"> <br><br> </a>
+
+    <div class="botoes">
+        <a href="cliente.html"> <button class="opcoes">
+                <img src="../assets/client.png" alt="" style="padding-right: 3%;">
+                Cliente</button> </a>
+        <a href="seller.html"> <button class="opcoes">
+                <img src="../assets/seller.png" alt="" style="padding-right: 3%;">
+                Vendedor</button> </a>
+        <a href="product.html"> <button class="opcoes">
+                <img src="../assets/box.png" alt="" style="padding-right: 3%;">
+                Produto</button> </a>
+        <a href="compra.html"> <button class="opcoes">
+                <img src="../assets/cart.png" alt="" style="padding-right: 3%;">
+                Venda</button> </a>
+        <a href="estoque.html"> <button class="opcoes">
+                <img src="../assets/ready-stock (1).png" alt="" style="padding-right: 3%;">
+                Estoque</button> </a> <br>
+    </div>
+    <h1>Formulário de Cadastro do produto</h1>
+    <form action="#">
+        <label for="nome">Nome do produto:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="nome">Categoria</label>
+        <input type="text" id="categoria" name="nome" required><br><br>
+        <label for="nome">Preço do Produto</label>
+        <input type="number" id="preco" name="nome" required><br><br>
+
+        <label for="regiao">Região:</label>
+        <select id="regiao" name="regiao" required>
+            <option value="">Selecione uma região</option>
+            <option value="1">Centro-Oeste</option>
+            <option value="2">Sul</option>
+            <option value="3">Norte</option>
+            <option value="4">Nordeste</option>
+
+        </select><br><br>
+        <button onclick="cadastrar()" class="cadastro">Cadastrar</button>
+
+        <table id="feed_container" class="feed-container">
+            <tr id="colunas-container">
+                <th>ID</th>
+                <th>Nome do produto</th>
+                <th>Categoria</th>
+                <th>Preço do produto</th>
+                <th>Região</th>
+                <th>Deletar</th>
+                <th>Alterar</th>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro </title>
+    <link rel="stylesheet" href="../css/cliente.css">
+    <script src="clienteView.js"></script>
+</head>
+
+<body onload="listCustomer()">
+    <a href="../index.html"> <img src="../assets/logo (2).png" alt="" class="logo"> <br><br> </a>
+
+    <div class="botoes">
+        <a href="cliente.html"> <button class="opcoes">
+                <img src="../assets/client.png" alt="" style="padding-right: 3%;">
+                Cliente</button> </a>
+        <a href="seller.html"> <button class="opcoes">
+                <img src="../assets/seller.png" alt="" style="padding-right: 3%;">
+                Vendedor</button> </a>
+        <a href="product.html"> <button class="opcoes">
+                <img src="../assets/box.png" alt="" style="padding-right: 3%;">
+                Produto</button> </a>
+        <a href="compra.html"> <button class="opcoes">
+                <img src="../assets/cart.png" alt="" style="padding-right: 3%;">
+                Venda</button> </a>
+        <a href="estoque.html"> <button class="opcoes">
+                <img src="../assets/ready-stock (1).png" alt="" style="padding-right: 3%;">
+                Estoque</button> </a> <br>
+    </div>
+
+    <h1>Formulário de Cadastro do cliente</h1>
+    <form action="#">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Ex: 123.456.789-01"
+            required><br><br>
+
+        <label for="uf">UF:</label>
+        <select id="uf" name="uf" required>
+            <option value="">Selecione uma UF</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select><br><br>
+        <button onclick="cadastrar()"  class="cadastro">Cadastrar</button>
+
+        <table id="feed_container" class="feed-container">
+            <tr id="colunas-container">
+                <th>ID</th>
+                <th>Nome completo</th>
+                <th>cpf</th>
+                <th>UF</th>
+                <th>Deletar</th>
+                <th>Alterar</th>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>

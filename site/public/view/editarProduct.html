@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="../css/cliente.css">
+    <script src="productView.js"></script>
+</head>
+
+
+<body>
+    <a href="../index.html"> <img src="../assets/logo (2).png" alt="" class="logo"> <br><br> </a>
+
+    <h1>Formulário de Cadastro</h1>
+    <form action="#" >
+        <label for="nome">Nome do produto:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+        <label for="nome">Categoria</label>
+        <input type="text" id="categoria" name="nome" required><br><br>
+        <label for="nome">Preço do Produto</label>
+        <input type="number" id="preco" name="nome" required><br><br>
+
+        <label for="regiao">Região:</label>
+        <select id="regiao" name="regiao" required>
+            <option value="">Selecione uma região</option>
+            <option value="1">Centro-Oeste</option>
+            <option value="2">Sul</option>
+            <option value="3">Norte</option>
+            <option value="4">Nordeste</option>
+
+        </select><br><br>
+        <button onclick="updateProduct()" class="cadastro">Cadastrar</button>
+
+
+    </form>
+</body>
+</html>
