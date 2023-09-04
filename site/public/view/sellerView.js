@@ -94,7 +94,7 @@
 
                         var buttonDelete = document.createElement("button");
                         buttonDelete.textContent = "Deletar"; // Texto do botão
-                        buttonDeletar.className = "botaoDeleter"
+                        buttonDelete.className = "botaoDeletar"
                         areaDelete.appendChild(buttonDelete);
                         buttonDelete.setAttribute("onclick", `deleteSeller(${publicacao.idVendedor})`);
 
